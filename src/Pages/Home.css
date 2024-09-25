@@ -1,0 +1,133 @@
+
+
+
+.home-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;    
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  box-sizing: border-box;
+
+}
+
+.page-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  /* margin-bottom: 2rem; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+    
+}
+
+    .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit title to 2 lines */
+  -webkit-box-orient: vertical;
+}
+
+.card-price {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit description to 2 lines */
+  -webkit-box-orient: vertical;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;    
+  background-color: #3498db;
+  color: #ffffff;
+  padding: .7rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: auto;
+  border: 0;
+  outline: 0;
+  letter-spacing: .01cm;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #2980b9;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #7f8c8d;
+  grid-column: 1 / -1;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

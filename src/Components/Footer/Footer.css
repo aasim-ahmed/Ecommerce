@@ -1,0 +1,120 @@
+/* Footer.css */
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 3rem 0 1rem;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    gap: 6rem;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-bottom: 2rem;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    color: #3498DB;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #0d5484;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3498DB;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #10517d;
+  }
+  
+  .newsletter h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter form {
+    display: flex;
+  }
+  
+  .newsletter input[type="email"] {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: #3498DB;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #146295;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      margin-bottom: 2rem;
+    }
+  }

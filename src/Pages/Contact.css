@@ -1,0 +1,115 @@
+/* Contact.css */
+.contact-container {
+    max-width: 1600px;
+    width: 100vw;
+    /* margin: 0 auto;   */
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.contact-title {
+    text-align: center;
+    color: #3498DB;
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-form-section,
+.contact-info-section,
+.map-container {
+    flex: 1;
+    height: fit-content;
+}
+
+.contact-form-section h2,
+.contact-info-section h2,
+.ouraddress h2   {
+    color: #3498DB;
+    margin-bottom: 1rem;
+}
+.contact-info-section{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 3rem;
+    
+    
+}
+
+.contact-form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+  }
+  
+  .submit-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #3498DB;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980B9;
+  }
+  
+  .info-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-group h3 {
+    color: #3498DB;
+    margin-bottom: .5rem;
+  }
+  
+  .info-group p {
+    color: #555;
+  }
+  
+  .map-container img {
+    
+    width: 100%;
+    height: fit-content;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 1024px) {
+    .contact-content {
+      flex-direction: column;
+    }
+  }
